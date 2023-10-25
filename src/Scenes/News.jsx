@@ -77,7 +77,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>RCS BIG GUITAR WEEKEND</h3>
                         </div>
-                        <img src={rcs} alt='Logo for the Royal Scottish Conservatoire' className={styles.newsImage} />
+
                         <div className={styles.newsDescription}>
                             <p >Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's
                                 Big Guitar Weekend in November. The festival includes 2 lessons, classes and
@@ -91,7 +91,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>Diploma Distinction!</h3>
                         </div>
-                        <img src={distinction} alt='MTB Logo and an image of Isaac' className={styles.newsImage} />
+
                         <div className={styles.newsDescription}>
                             <p >Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's
                                 Big Guitar Weekend in November. The festival includes 2 lessons, classes and
@@ -105,7 +105,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Craig Ogden</h3>
                         </div>
-                       
+
                         <div className={styles.newsDescription}>
                             <p >Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping
                                 Norton Festival.</p>
@@ -116,7 +116,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>Competition Season 2023</h3>
                         </div>
-                        <img src={trophies} alt='Various trophy images of Isaac' className={styles.newsImage} />
+
                         <div className={styles.newsDescription}>
                             <p >Isaac has been very busy this year, competiting across the country...</p>
                         </div>
@@ -126,7 +126,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Ana Vidovic</h3>
                         </div>
-                        <img src={ana} alt='Masterclass with Ana Vidovic' className={styles.newsImage} />
+
                         <div className={styles.newsDescription}>
                             <p >As part of the IGF London Guitar Festival 2022, Isaac had a masterclass with the legendary
                                 Ana Vidovic...</p>
