@@ -7,6 +7,7 @@ const News = () => {
         background: 'h-full bg-zinc-900',
         mobileTitle: 'text-neutral-100 text-5xl text-center pt-12 pb-8 lg:pt-52 tracking-widest',
         listStyles: 'list-disc ml-8',
+        listTitle: 'text-sky-800 font-bold',
 
         mobileContainer: 'block sm:block md:hidden',
         mobileDisplay: 'mx-6',
@@ -33,7 +34,7 @@ const News = () => {
                 <div className={styles.mobileDisplay}>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>September 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
@@ -50,7 +51,7 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>July 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
@@ -74,7 +75,7 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>May 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
@@ -90,25 +91,31 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>January to March 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Competition Season 2023</h3>
                         </div>
                         <div className={styles.newsDescription}>
-                            <p >Isaac has been very busy this year, competiting across the country...</p>
+                            <p >Isaac has been very busy this year, competiting across the country with some fantastic results and musical performances. Here are the highlights...<br /></p>
+                            <div className={styles.listStyles}>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Mrs Sunderland Music Festival</h4>String Solo Year 13 and under - First</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Harroagte Music Festival</h4>Open Classical Guitar Solo - Second</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Oxford Music Festival</h4>Open Classical Guitar Solo - First</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Rothwell Music Festival</h4>Open Classical Guitar Solo - First</li>
+                                <p><br />A very successful season!</p>
+                            </div>
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>October 2022</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Masterclass with Ana Vidovic</h3>
                         </div>
-
                         <div className={styles.newsDescription}>
                             <p >As part of the IGF London Guitar Festival 2022, Isaac had a masterclass with the legendary
                                 Ana Vidovic...</p>
@@ -125,7 +132,7 @@ const News = () => {
                 <div className={styles.desktopDisplay}>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>September 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
@@ -141,7 +148,7 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>July 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
@@ -163,7 +170,7 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>May 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
@@ -172,12 +179,14 @@ const News = () => {
 
                         <div className={styles.newsDescription}>
                             <p >Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping
-                                Norton Festival.</p>
+                                Norton Festival.<br /> <br />Isaac played Scarlatti's Sonata in E minor, K.11, in preparation for his diploma recital.
+                                <br /> <br />Craig's knowledge and expertise are second to none, and Isaac found this experience to be enlightening,
+                                particularly regarding Baroque ornaments.<br /> <br />Thank you very much to the Chipping Norton Music Festival for the opportunity!</p>
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>January to March 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
@@ -185,12 +194,19 @@ const News = () => {
                         </div>
 
                         <div className={styles.newsDescription}>
-                            <p >Isaac has been very busy this year, competiting across the country...</p>
+                            <p >Isaac has been very busy this year, competiting across the country with some fantastic results and musical performances. Here are the highlights...<br /></p>
+                            <div className={styles.listStyles}>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Mrs Sunderland Music Festival</h4>String Solo Year 13 and under - First</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Harroagte Music Festival</h4>Open Classical Guitar Solo - Second</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Oxford Music Festival</h4>Open Classical Guitar Solo - First</li>
+                                <li className='mb-4'><h4 className={styles.listTitle}>Rothwell Music Festival</h4>Open Classical Guitar Solo - First</li>
+                                <p><br />A very successful season!</p>
+                            </div>
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div className='text-right mb-2'>
+                        <div className='text-right mb-2 text-neutral-500'>
                             <small>October 2022</small>
                         </div>
                         <div className={styles.newsTitle}>
@@ -199,7 +215,9 @@ const News = () => {
 
                         <div className={styles.newsDescription}>
                             <p >As part of the IGF London Guitar Festival 2022, Isaac had a masterclass with the legendary
-                                Ana Vidovic...</p>
+                                Ana Vidovic.<br /><br />He played the very exciting Mazurka Appasionata by Barrios, that demonstrates some virtuosic passages and
+                                large stretches!<br /><br />Ana was very complimentary and worked on phrasing and character.<br /><br />Thank you very much to IGF
+                                for the opportunity!</p>
                         </div>
                     </div>
 

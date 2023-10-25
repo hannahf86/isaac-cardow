@@ -58,19 +58,6 @@ const Calendar = () => {
 
                 {/* EVENT THREE */}
                 <h2 className={styles.eventTypeCompetition}>Competition</h2>
-                <h3 className={styles.eventTitle}>Oxford Music Festival</h3>
-                <h3 className={styles.eventDate}>January 2024</h3>
-                <a href='https://www.oxfordmusicfestival.org/' target='_blank'>
-                    <h3>Oxford, tbc</h3>
-                </a>
-                <h3 className={styles.competitionInfo}>Info</h3>
-                <p className={styles.eventDescription}>Tickets can be bought on the door.</p>
-                <div className='my-4 m-auto'>_______________________________________</div>
-
-
-
-                {/* EVENT FOUR */}
-                <h2 className={styles.eventTypeCompetition}>Competition</h2>
                 <h3 className={styles.eventTitle}>Mrs Sunderland Performing Arts Festival</h3>
                 <h3 className={styles.eventDate}>February 2024</h3>
                 <a href='https://www.mrssunderlandfestival.com/' target='_blank'>
@@ -81,21 +68,7 @@ const Calendar = () => {
                 <div className='my-4 m-auto'>_______________________________________</div>
 
 
-
-                {/* EVENT FIVE */}
-                <h2 className={styles.eventTypeCompetition}>Competition</h2>
-                <h3 className={styles.eventTitle}>Chipping Norton</h3>
-                <h3 className={styles.eventDate}>March 2024</h3>
-                <a href='https://www.cnmf.org.uk/' target='_blank'>
-                    <h3>Chipping Norton Town Hall</h3>
-                </a>
-                <h3 className={styles.competitionInfo}>Info</h3>
-                <p className={styles.eventDescription}>Tickets can be bought on the door.</p>
-                <div className='my-4 m-auto'>_______________________________________</div>
-
-
-
-                {/* EVENT SIX */}
+                {/* EVENT FOUR */}
                 <h2 className={styles.eventTypeCompetition}>Competition</h2>
                 <h3 className={styles.eventTitle}>Rothwell</h3>
                 <h3 className={styles.eventDate}>March 2024</h3>
@@ -108,7 +81,7 @@ const Calendar = () => {
 
 
 
-                {/* EVENT SEVEN */}
+                {/* EVENT FIVE */}
                 <h2 className={styles.eventTypeCompetition}>Competition</h2>
                 <h3 className={styles.eventTitle}>Harrogate Competitive Fesitval for Music</h3>
                 <h3 className={styles.eventDate}>March 2024</h3>
@@ -121,7 +94,7 @@ const Calendar = () => {
 
 
 
-                {/* EVENT EIGHT */}
+                {/* EVENT SIX */}
                 <h2 className={styles.eventTypeNYGE}>NYGE Event</h2>
                 <h3 className={styles.eventTitle}>NYGE Easter Residential</h3>
                 <h3 className={styles.eventDate}>4th to 6th April 2024</h3>
