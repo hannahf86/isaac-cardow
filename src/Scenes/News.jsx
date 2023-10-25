@@ -1,63 +1,26 @@
 import React from 'react';
-import NewsAccordion from '../Components/NewsAccordion'
 
 
 const News = () => {
 
-    const newsData = [
-        {
-            title: 'RCS Big Guitar Weekend',
-            alt: 'Logo for the Royal Scottish Conservatoire',
-            description: `Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's 
-                    Big Guitar Weekend in November. The festival includes 2 lessons, classes and 
-                    concerts by world renowned performers such as Sean Shibe. This is a tremendous 
-                    honor from the Head of Guitar Studies, Allan Neive and something Isaac is very
-                    excited about.`,
-
-        },
-        {
-            title: 'Diploma Distinction!',
-            alt: 'MTB Logo and an image of Isaac',
-            description: `Isaac achieved a distinction in his Associate Diploma that he took 
-                    through the Music Teachers' Board. The report included comments such as "much to admire" and 
-                    "plenty of musical and technical skills on show". Whilst there is still plenty of work
-                    to be done, this is a commendable result and a great first step towards Isaac's future
-                    in his musical career.`,
-
-        },
-        {
-            title: 'Masterclass with Craig Ogden',
-            alt: 'Masterclass with Craig Ogden',
-            description: `Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping 
-                        Norton Festival. `,
-
-        },
-        {
-            title: 'Competition Season 2023',
-            alt: 'Various trophy images of Isaac',
-            description: `Isaac has been very busy this year, competiting across the country...`,
-
-        },
-        {
-            title: 'Masterclass with Ana Vidovic',
-            alt: 'Masterclass with Ana Vidovic',
-            description: `As part of the IGF London Guitar Festival 2022, Isaac had a masterclass with the legendary 
-        Ana Vidovic...`,
-        },
-    ];
-
     const styles = {
         background: 'h-full bg-zinc-900',
-        mobileTitle: 'text-neutral-100 text-5xl text-center pt-12 pb-20 lg:pt-52 tracking-widest',
+        mobileTitle: 'text-neutral-100 text-5xl text-center pt-12 pb-8 lg:pt-52 tracking-widest',
+        listStyles: 'list-disc ml-8',
+
+        mobileContainer: 'block sm:block md:hidden',
+        mobileDisplay: 'mx-6',
+        mobileSubTitle: 'text-sky-800 text-2xl text-center uppercase pt-4 pb-6',
+        mobileNewsCard: 'bg-neutral-100 rounded-lg drop-shadow-md mb-8 p-6 border-4 border-sky-800',
 
         desktopContainer: 'sm:block md:block hidden',
-        desktopDisplay: 'grid grid-cols-2 gap-24 mx-12 bg-neutral-200 px-12 py-8 border-4 border-sky-800',
+        desktopDisplay: 'grid grid-cols-2 gap-24 mx-12 px-12 py-8',
         newsOne: 'col-start-1 ',
         newsTwo: 'col-start-2',
 
-        newsTitle: 'text-sky-800 font-bold text-3xl text-center uppercase pt-4',
+        newsTitle: 'text-sky-800 font-bold text-3xl text-center uppercase py-4',
         newsImage: ' my-6 m-auto items-center',
-        newsDescription: 'text-zinc-900 text-md leading-relaxed text-justify',
+        newsDescription: 'text-zinc-900 text-md leading-relaxed',
 
     }
 
@@ -66,42 +29,141 @@ const News = () => {
             <h1 className={styles.mobileTitle}>NEWS</h1>
 
             {/* MOBILE & TABLET */}
-            <div className='md:hidden lg:hidden'><NewsAccordion sections={newsData} /></div>
+            <div className={styles.mobileContainer}>
+                <div className={styles.mobileDisplay}>
+
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: September 2023</small>
+                        </div>
+                        <div className={styles.mobileSubTitle}>
+                            <h3>RCS BIG <br />GUITAR WEEKEND</h3>
+                        </div>
+
+                        <div className={styles.newsDescription}>
+                            <p >Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's
+                                Big Guitar Weekend in November. <br /> <br />The festival includes 2 lessons, classes and
+                                concerts by world renowned performers such as Sean Shibe. <br /> <br />This is a tremendous
+                                honor from the Head of Guitar Studies, Allan Neive and something Isaac is very
+                                excited about.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: July 2023</small>
+                        </div>
+                        <div className={styles.mobileSubTitle}>
+                            <h3>Diploma Distinction!</h3>
+                        </div>
+
+                        <div className={styles.newsDescription}>
+                            <p >Isaac has achieved a distinction in his AMTB Performance Diploma!<br /> <br />His programme included...</p>
+                            <div className={styles.listStyles}>
+                                <li>Scarlatti - Sonata in E minor K.11</li>
+                                <li>Sor - Fantasia Op.40</li>
+                                <li>Tarrega - Capricho Arabe</li>
+                                <li>Barrios - Mazurka Appassionata</li>
+                                <li>Andrew York - Sunburst</li>
+                            </div>
+                            <p><br /> As always, MTB provided a thorough, thoughtful and insightful report, praising Isaac's successes and providing him with guitar specific advice moving forward.<br /> <br />
+                                A wonderful result!</p>
+
+                        </div>
+                    </div>
+
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: May 2023</small>
+                        </div>
+                        <div className={styles.mobileSubTitle}>
+                            <h3>Masterclass with Craig Ogden</h3>
+                        </div>
+
+                        <div className={styles.newsDescription}>
+                            <p >Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping
+                                Norton Festival.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: January to March 2023</small>
+                        </div>
+                        <div className={styles.mobileSubTitle}>
+                            <h3>Competition Season 2023</h3>
+                        </div>
+
+                        <div className={styles.newsDescription}>
+                            <p >Isaac has been very busy this year, competiting across the country...</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: January to October 2022</small>
+                        </div>
+                        <div className={styles.mobileSubTitle}>
+                            <h3>Masterclass with Ana Vidovic</h3>
+                        </div>
+
+                        <div className={styles.newsDescription}>
+                            <p >As part of the IGF London Guitar Festival 2022, Isaac had a masterclass with the legendary
+                                Ana Vidovic...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
 
             {/* DESKTOP */}
             <div className={styles.desktopContainer}>
                 <div className={styles.desktopDisplay}>
 
-                    <div className={styles.newsOne}>
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: September 2022</small>
+                        </div>
                         <div className={styles.newsTitle}>
                             <h3>RCS BIG GUITAR WEEKEND</h3>
                         </div>
-
                         <div className={styles.newsDescription}>
                             <p >Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's
-                                Big Guitar Weekend in November. The festival includes 2 lessons, classes and
-                                concerts by world renowned performers such as Sean Shibe. This is a tremendous
+                                Big Guitar Weekend in November. <br /> <br />The festival includes 2 lessons, classes and
+                                concerts by world renowned performers such as Sean Shibe. <br /> <br />This is a tremendous
                                 honor from the Head of Guitar Studies, Allan Neive and something Isaac is very
                                 excited about.</p>
                         </div>
                     </div>
 
-                    <div className={styles.newsTwo}>
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: July 2023</small>
+                        </div>
                         <div className={styles.newsTitle}>
                             <h3>Diploma Distinction!</h3>
                         </div>
 
                         <div className={styles.newsDescription}>
-                            <p >Isaac has been offered a full bursary for The Royal Conservatoire of Scotland's
-                                Big Guitar Weekend in November. The festival includes 2 lessons, classes and
-                                concerts by world renowned performers such as Sean Shibe. This is a tremendous
-                                honor from the Head of Guitar Studies, Allan Neive and something Isaac is very
-                                excited about.</p>
+                            <p >Isaac has achieved a distinction in his AMTB Performance Diploma!<br /> <br />His programme included...</p>
+                            <div className={styles.listStyles}>
+                                <li>Scarlatti - Sonata in E minor K.11</li>
+                                <li>Sor - Fantasia Op.40</li>
+                                <li>Tarrega - Capricho Arabe</li>
+                                <li>Barrios - Mazurka Appassionata</li>
+                                <li>Andrew York - Sunburst</li>
+                            </div>
+                            <p><br /> As always, MTB provided a thorough, thoughtful and insightful report, praising Isaac's successes and providing him with guitar specific advice moving forward.<br /> <br />
+                                A wonderful result!</p>
                         </div>
                     </div>
 
-                    <div className={styles.newsOne}>
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: May 2023</small>
+                        </div>
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Craig Ogden</h3>
                         </div>
@@ -112,7 +174,10 @@ const News = () => {
                         </div>
                     </div>
 
-                    <div className={styles.newsTwo}>
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: January to March 2023</small>
+                        </div>
                         <div className={styles.newsTitle}>
                             <h3>Competition Season 2023</h3>
                         </div>
@@ -122,7 +187,10 @@ const News = () => {
                         </div>
                     </div>
 
-                    <div className={styles.newsOne}>
+                    <div className={styles.mobileNewsCard}>
+                        <div>
+                            <small>Date: October 2022</small>
+                        </div>
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Ana Vidovic</h3>
                         </div>
