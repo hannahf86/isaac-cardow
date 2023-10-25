@@ -1,12 +1,6 @@
 import React from 'react';
 import NewsAccordion from '../Components/NewsAccordion'
 
-// IMAGES
-import rcs from '../assets/rcs.png'
-import distinction from '../assets/distinction.png'
-import craig from '../assets/craig.png'
-import trophies from '../assets/trophies.png'
-import ana from '../assets/ana.png'
 
 const News = () => {
 
@@ -111,7 +105,7 @@ const News = () => {
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Craig Ogden</h3>
                         </div>
-                        <img src={craig} alt='Masterclass with Craig Ogden' className={styles.newsImage} />
+                       
                         <div className={styles.newsDescription}>
                             <p >Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping
                                 Norton Festival.</p>
