@@ -33,8 +33,8 @@ const News = () => {
                 <div className={styles.mobileDisplay}>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: September 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>September 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>RCS BIG <br />GUITAR WEEKEND</h3>
@@ -50,8 +50,8 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: July 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>July 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Diploma Distinction!</h3>
@@ -66,15 +66,16 @@ const News = () => {
                                 <li>Barrios - Mazurka Appassionata</li>
                                 <li>Andrew York - Sunburst</li>
                             </div>
-                            <p><br /> As always, MTB provided a thorough, thoughtful and insightful report, praising Isaac's successes and providing him with guitar specific advice moving forward.<br /> <br />
+                            <p><br /> As always, MTB provided a thorough, thoughtful and insightful report, praising Isaac's successes and providing
+                                him with guitar specific advice moving forward.<br /> <br />
                                 A wonderful result!</p>
 
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: May 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>May 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Masterclass with Craig Ogden</h3>
@@ -82,26 +83,27 @@ const News = () => {
 
                         <div className={styles.newsDescription}>
                             <p >Isaac took part in a masterclass with world-renowned Craig Ogden at the Chipping
-                                Norton Festival.</p>
+                                Norton Festival.<br /> <br />Isaac played Scarlatti's Sonata in E minor, K.11, in preparation for his diploma recital.
+                                <br /> <br />Craig's knowledge and expertise are second to none, and Isaac found this experience to be enlightening,
+                                particularly regarding Baroque ornaments.<br /> <br />Thank you very much to the Chipping Norton Music Festival for the opportunity!</p>
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: January to March 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>January to March 2023</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Competition Season 2023</h3>
                         </div>
-
                         <div className={styles.newsDescription}>
                             <p >Isaac has been very busy this year, competiting across the country...</p>
                         </div>
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: January to October 2022</small>
+                        <div className='text-right mb-2'>
+                            <small>October 2022</small>
                         </div>
                         <div className={styles.mobileSubTitle}>
                             <h3>Masterclass with Ana Vidovic</h3>
@@ -123,8 +125,8 @@ const News = () => {
                 <div className={styles.desktopDisplay}>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: September 2022</small>
+                        <div className='text-right mb-2'>
+                            <small>September 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
                             <h3>RCS BIG GUITAR WEEKEND</h3>
@@ -139,8 +141,8 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: July 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>July 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
                             <h3>Diploma Distinction!</h3>
@@ -161,8 +163,8 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: May 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>May 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Craig Ogden</h3>
@@ -175,8 +177,8 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: January to March 2023</small>
+                        <div className='text-right mb-2'>
+                            <small>January to March 2023</small>
                         </div>
                         <div className={styles.newsTitle}>
                             <h3>Competition Season 2023</h3>
@@ -188,8 +190,8 @@ const News = () => {
                     </div>
 
                     <div className={styles.mobileNewsCard}>
-                        <div>
-                            <small>Date: October 2022</small>
+                        <div className='text-right mb-2'>
+                            <small>October 2022</small>
                         </div>
                         <div className={styles.newsTitle}>
                             <h3>Masterclass with Ana Vidovic</h3>
