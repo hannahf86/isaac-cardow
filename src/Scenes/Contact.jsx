@@ -60,7 +60,7 @@ const Contact = () => {
 
                     <div className='flex justify-center'>
                         <button type="submit" value='Send' className={styles.button}>
-                            <h3 className={styles.buttonText}>SEND</h3>
+                            <h4 className={styles.buttonText}>Send</h4>
                         </button>
                     </div>
                 </form>

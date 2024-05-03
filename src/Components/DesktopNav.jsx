@@ -1,40 +1,48 @@
-import React from 'react'
-
 const DesktopNav = () => {
-
   const styles = {
-    background: 'fixed w-full flex flex-row justify-evenly bg-zinc-900 shadow-lg shadow-sky-800 z-10',
-    icons: 'flex flex-row content-center text-neutral-200 my-12',
-    text: 'text-xl ml-3 tracking-widest hover:text-sky-800 hover:scale-110 cursor-pointer',
-  }
+    background:
+      "fixed w-full flex flex-row justify-evenly bg-zinc-900 shadow-lg shadow-sky-800 z-10",
+    icons: "flex flex-row content-center text-neutral-200 my-12",
+    text: "text-xl ml-3 tracking-widest hover:text-sky-800 hover:scale-110 cursor-pointer",
+  };
 
   return (
     <div>
-
-      <div id='desktop-nav' className={styles.background}>
+      <div id="desktop-nav" className={styles.background}>
         <div className={styles.icons}>
-          <a href='/'><h2 className={styles.text}>HOME</h2></a>
+          <a href="/">
+            <h2 className={styles.text}>HOME</h2>
+          </a>
         </div>
 
         <div className={styles.icons}>
-          <a href='/#about'> <h2 className={styles.text}>ABOUT</h2></a>
+          <a href="/#about">
+            {" "}
+            <h2 className={styles.text}>ABOUT</h2>
+          </a>
         </div>
 
         <div className={styles.icons}>
-          <a href='/#news'><h2 className={styles.text}>NEWS</h2></a>
+          <a href="/#news">
+            <h2 className={styles.text}>NEWS</h2>
+          </a>
         </div>
 
         <div className={styles.icons}>
-          <a href='/#calendar'><h2 className={styles.text}>CALENDAR</h2></a>
+          <a href="/#calendar">
+            <h2 className={styles.text}>CALENDAR</h2>
+          </a>
         </div>
 
         <div className={styles.icons}>
-          <a href='/#contact'> <h2 className={styles.text}>CONTACT</h2></a>
+          <a href="/#contact">
+            {" "}
+            <h2 className={styles.text}>CONTACT</h2>
+          </a>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default DesktopNav
+export default DesktopNav;
