@@ -18,7 +18,7 @@ const DesktopNav = () => {
         <div className={styles.icons}>
           <a href="/#about">
             {" "}
-            <h2 className={styles.text}>ABOUT</h2>
+            <h2 className={styles.text}>BIO</h2>
           </a>
         </div>
 
