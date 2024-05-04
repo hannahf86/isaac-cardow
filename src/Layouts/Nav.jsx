@@ -1,7 +1,10 @@
+// RRD
+import { NavLink, Outlet } from "react-router-dom";
+
 // ASSETS
 import logo from "../assets/favicon.png";
 import { HiHome, HiCalendar, HiMail } from "react-icons/hi";
-import { BiSolidNews, BiSolidBookBookmark } from "react-icons/bi";
+import { BiSolidBookBookmark } from "react-icons/bi";
 
 const Nav = () => {
   const styles = {
@@ -22,47 +25,53 @@ const Nav = () => {
       {/* DESKTOP */}
       <div className={styles.container}>
         <div id="nav" className={styles.background}>
-          <a href="/" id="nav-link">
+          <NavLink to="/" id="nav-link">
             <h2 className={styles.text}>HOME</h2>
-          </a>
+          </NavLink>
 
-          <a href="/#about">
+          <NavLink to="about">
             <h2 className={styles.text}>ABOUT</h2>
-          </a>
+          </NavLink>
 
-          <a href="/#news">
+          <NavLink to="/" id="nav-link">
             <img src={logo} width={60} />
-          </a>
+          </NavLink>
 
-          <a href="/#calendar">
+          <NavLink to="calendar">
             <h2 className={styles.text}>CALENDAR</h2>
-          </a>
+          </NavLink>
 
-          <a href="/#contact">
+          <NavLink to="contact">
             <button className={styles.button}>BOOK</button>
-          </a>
+          </NavLink>
         </div>
       </div>
+
       {/* MOBILE & TABLET */}
       <div className={styles.mobileContainer}>
         <div className={styles.mobileBackground}>
-          <a href="/" aria-current="page" className="nav-link">
+          <NavLink aria-current="page" className="nav-link">
             <HiHome size={28} className={styles.icon} />
-          </a>
-          <a href="/#about" aria-current="page" className="nav-link">
+          </NavLink>
+
+          <NavLink to="about" aria-current="page" className="nav-link">
             <BiSolidBookBookmark size={25} className={styles.icon} />
-          </a>
-          <a href="/#news" aria-current="page" className="nav-link">
-            <BiSolidNews size={28} className={styles.icon} />
-          </a>
-          <a href="/#calendar" aria-current="page" className="nav-link">
+          </NavLink>
+
+          <NavLink to="calendar" aria-current="page" className="nav-link">
             <HiCalendar size={28} className={styles.icon} />
-          </a>
-          <a href="/#contact" aria-current="page" className="nav-link">
+          </NavLink>
+
+          <NavLink to="contact" aria-current="page" className="nav-link">
             <HiMail size={28} className={styles.icon} />
-          </a>
+          </NavLink>
         </div>
       </div>
+
+      {/* DO NOT FORGET OUTLET!! */}
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 };

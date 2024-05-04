@@ -8,9 +8,7 @@ export default {
         xs: "425px",
       },
       colors: {
-        bkg: "#171819",
         black: "#020617",
-        white: "#f5f5f5",
         accent: "#50140d",
         lightAccent: "#76140d",
       },
