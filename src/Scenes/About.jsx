@@ -3,13 +3,13 @@ const About = () => {
     background: "h-full bg-zinc-900",
     mobileContainer: "md:hidden lg:hidden",
     mobileTitle:
-      "text-neutral-100 text-5xl md:text-5l text-center py-12 tracking-widest",
-    mobileText: "text-neutral-100 mx-8",
+      "font-sans text-neutral-100 text-5xl md:text-5l text-center py-12 tracking-widest",
+    mobileText: "font-serif text-neutral-100 mx-8",
 
     desktopContainer: "sm:block md:block hidden",
     desktopTitle:
-      "text-neutral-100 text-5xl text-center py-12 pt-40 tracking-widest",
-    desktopText: "text-neutral-100 mx-32 text-xl leading-loose",
+      "font-sans text-neutral-100 text-5xl text-center py-12 pt-40 tracking-widest",
+    desktopText: "font-serif text-neutral-100 mx-60 text-lg leading-loose",
     button:
       "bg-zinc-200 px-6 py-2 rounded-lg border-4 border-sky-800 mt-4 text-zinc-900",
   };
@@ -18,8 +18,8 @@ const About = () => {
     <div id="about" className={styles.background}>
       {/* MOBILE & TABLET */}
       <div id="mobile-about" className={styles.mobileContainer}>
-        <h1 className={styles.mobileTitle}>ABOUT</h1>
-        <p>
+        <h1 className={styles.mobileTitle}>Bio</h1>
+        <p className={styles.mobileText}>
           Isaac is a talented and award winning classical guitarist, whose
           virtuosity has captivated audiences across the UK.
         </p>
@@ -43,7 +43,7 @@ const About = () => {
       {/* DESKTOP */}
       <div id="desktop-about" className={styles.desktopContainer}>
         <div className={styles.desktopTitle}>
-          <h1>ABOUT</h1>
+          <h1>About</h1>
         </div>
 
         <div className={styles.desktopText}>

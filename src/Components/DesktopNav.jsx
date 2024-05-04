@@ -1,9 +1,8 @@
 const DesktopNav = () => {
   const styles = {
-    background:
-      "fixed w-full flex flex-row justify-evenly bg-zinc-900 shadow-lg shadow-sky-800 z-10",
+    background: "fixed w-full flex flex-row justify-evenly bg-zinc-900 ",
     icons: "flex flex-row content-center text-neutral-200 my-12",
-    text: "text-xl ml-3 tracking-widest hover:text-sky-800 hover:scale-110 cursor-pointer",
+    text: "font-serif text-md ml-3 tracking-widest hover:text-sky-800 hover:scale-110 cursor-pointer",
   };
 
   return (
@@ -18,7 +17,7 @@ const DesktopNav = () => {
         <div className={styles.icons}>
           <a href="/#about">
             {" "}
-            <h2 className={styles.text}>BIO</h2>
+            <h2 className={styles.text}>ABOUT</h2>
           </a>
         </div>
 

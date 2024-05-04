@@ -3,37 +3,10 @@
 @tailwind utilities;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
-h1 {
-    font-family: "tondu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h2 {
-    font-family: 'Kalam', cursive;
-}
-
-h3 {
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
-}
-
-h4 {
-    font-family: "nunito-sans", sans-serif;
-    font-weight: 800;
-}
-
-p {
-    font-family: "nunito-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+#nav-link[aria-current="page"] {
+  color: #b42ea9;
+  text-underline-offset: 0.5rem;
 }
