@@ -1,6 +1,9 @@
 // RRD
 import { NavLink, Outlet } from "react-router-dom";
 
+// COMPONENTS
+import Footer from "../Components/Footer";
+
 // ASSETS
 import logo from "../assets/favicon.png";
 import { HiHome, HiCalendar, HiMail } from "react-icons/hi";
@@ -68,10 +71,13 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* DO NOT FORGET OUTLET!! */}
+      {/* OUTLET */}
       <main>
         <Outlet />
       </main>
+
+      {/* FOOTER */}
+      <Footer />
     </>
   );
 };
