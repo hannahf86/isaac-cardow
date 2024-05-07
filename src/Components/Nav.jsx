@@ -1,6 +1,3 @@
-// RRD
-import { NavLink } from "react-router-dom";
-
 // ASSETS
 import logo from "../assets/favicon.png";
 import { HiHome, HiMail, HiNewspaper } from "react-icons/hi";
@@ -25,46 +22,46 @@ const Nav = () => {
       {/* DESKTOP */}
       <div className={styles.container}>
         <div id="nav" className={styles.background}>
-          <NavLink to="/" id="nav-link">
+          <a to="/" id="nav-link">
             <h2 className={styles.text}>HOME</h2>
-          </NavLink>
+          </a>
 
-          <NavLink to="about">
+          <a href="/#about">
             <h2 className={styles.text}>ABOUT</h2>
-          </NavLink>
+          </a>
 
-          <NavLink to="/" id="nav-link">
+          <a href="/" id="nav-link">
             <img src={logo} width={60} />
-          </NavLink>
+          </a>
 
-          <NavLink to="news">
+          <a href="/#news">
             <h2 className={styles.text}>NEWS</h2>
-          </NavLink>
+          </a>
 
-          <NavLink to="contact">
+          <a href="/#contact">
             <button className={styles.button}>BOOK</button>
-          </NavLink>
+          </a>
         </div>
       </div>
 
       {/* MOBILE & TABLET */}
       <div className={styles.mobileContainer}>
         <div className={styles.mobileBackground}>
-          <NavLink aria-current="page" className="nav-link">
+          <a aria-current="page" className="nav-link">
             <HiHome size={28} className={styles.icon} />
-          </NavLink>
+          </a>
 
-          <NavLink to="about" aria-current="page" className="nav-link">
+          <a href="/#about" aria-current="page" className="nav-link">
             <BiSolidBookBookmark size={25} className={styles.icon} />
-          </NavLink>
+          </a>
 
-          <NavLink to="news" aria-current="page" className="nav-link">
+          <a href="/#news" aria-current="page" className="nav-link">
             <HiNewspaper size={28} className={styles.icon} />
-          </NavLink>
+          </a>
 
-          <NavLink to="contact" aria-current="page" className="nav-link">
+          <a href="/#contact" aria-current="page" className="nav-link">
             <HiMail size={28} className={styles.icon} />
-          </NavLink>
+          </a>
         </div>
       </div>
     </>
