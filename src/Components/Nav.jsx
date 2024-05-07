@@ -22,7 +22,7 @@ const Nav = () => {
       {/* DESKTOP */}
       <div className={styles.container}>
         <div id="nav" className={styles.background}>
-          <a to="/" id="nav-link">
+          <a href="/" id="nav-link">
             <h2 className={styles.text}>HOME</h2>
           </a>
 
@@ -34,7 +34,7 @@ const Nav = () => {
             <img src={logo} width={60} />
           </a>
 
-          <a href="/#news">
+          <a href="/#newsgrid">
             <h2 className={styles.text}>NEWS</h2>
           </a>
 
@@ -47,7 +47,7 @@ const Nav = () => {
       {/* MOBILE & TABLET */}
       <div className={styles.mobileContainer}>
         <div className={styles.mobileBackground}>
-          <a aria-current="page" className="nav-link">
+          <a aria-current="page" href="/" className="nav-link">
             <HiHome size={28} className={styles.icon} />
           </a>
 

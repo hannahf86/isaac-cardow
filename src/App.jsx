@@ -5,7 +5,7 @@ import Footer from "./Components/Footer";
 // SCENES
 import Home from "./Scenes/Home";
 import About from "./Scenes/About";
-import News from "./Scenes/News";
+import NewsGrid from "./Scenes/NewsGrid";
 import Contact from "./Scenes/Contact";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Nav />
       <Home />
       <About />
-      <News />
+      <NewsGrid />
       <Contact />
       <Footer />
     </>
