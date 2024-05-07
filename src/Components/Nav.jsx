@@ -1,22 +1,19 @@
 // RRD
-import { NavLink, Outlet } from "react-router-dom";
-
-// COMPONENTS
-import Footer from "../Components/Footer";
+import { NavLink } from "react-router-dom";
 
 // ASSETS
 import logo from "../assets/favicon.png";
-import { HiHome, HiCalendar, HiMail } from "react-icons/hi";
+import { HiHome, HiMail, HiNewspaper } from "react-icons/hi";
 import { BiSolidBookBookmark } from "react-icons/bi";
 
-const Layout = () => {
+const Nav = () => {
   const styles = {
     container: "hidden sm:hidden md:block lg:block fixed z-10",
     background:
       "fixed w-full flex flex-row justify-evenly items-center bg-white ",
-    text: "text-black font-serif text-md tracking-widest py-12 px-2 hover:text-neutral-200 hover:bg-accent hover:scale-110 cursor-pointer",
+    text: "text-black font-serif text-md tracking-widest py-6 px-2 hover:text-neutral-200 hover:bg-accent hover:scale-110 cursor-pointer",
     button:
-      "bg-accent rounded-lg py-4 px-12 m-1 text-neutral-200 my-8 font-serif text-md tracking-widest cursor-pointer hover:scale-110 active:bg-lightAccent ",
+      "bg-accent rounded-lg py-4 px-12 m-1 text-neutral-200 my-6 font-serif text-md tracking-widest cursor-pointer hover:scale-110 active:bg-lightAccent ",
     mobileContainer: "block lg:hidden md:hidden sm:block",
     mobileBackground:
       "flex flex-row w-full justify-evenly items-center fixed bottom-0 z-50 bg-white z-10",
@@ -40,8 +37,8 @@ const Layout = () => {
             <img src={logo} width={60} />
           </NavLink>
 
-          <NavLink to="calendar">
-            <h2 className={styles.text}>CALENDAR</h2>
+          <NavLink to="news">
+            <h2 className={styles.text}>NEWS</h2>
           </NavLink>
 
           <NavLink to="contact">
@@ -61,8 +58,8 @@ const Layout = () => {
             <BiSolidBookBookmark size={25} className={styles.icon} />
           </NavLink>
 
-          <NavLink to="calendar" aria-current="page" className="nav-link">
-            <HiCalendar size={28} className={styles.icon} />
+          <NavLink to="news" aria-current="page" className="nav-link">
+            <HiNewspaper size={28} className={styles.icon} />
           </NavLink>
 
           <NavLink to="contact" aria-current="page" className="nav-link">
@@ -70,16 +67,8 @@ const Layout = () => {
           </NavLink>
         </div>
       </div>
-
-      {/* OUTLET */}
-      <main>
-        <Outlet />
-      </main>
-
-      {/* FOOTER */}
-      <Footer />
     </>
   );
 };
 
-export default Layout;
+export default Nav;
