@@ -5,8 +5,3 @@
 * {
   box-sizing: border-box;
 }
-
-#nav-link[aria-current="page"] {
-  color: #b42ea9;
-  text-underline-offset: 0.5rem;
-}
