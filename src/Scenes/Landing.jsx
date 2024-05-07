@@ -29,7 +29,7 @@ const Landing = () => {
   };
 
   return (
-    <div id="/" className={styles.background}>
+    <div id="/" className={styles.background} aria-label="home page">
       {/* MOBILE */}
       <div id="moblile-landing" className={styles.mobileContainer}>
         <div className={styles.mobileTitle}>

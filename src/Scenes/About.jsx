@@ -1,21 +1,19 @@
 const About = () => {
   const styles = {
-    background: "h-full bg-zinc-900",
+    background: "h-full bg-white",
     mobileContainer: "md:hidden lg:hidden",
     mobileTitle:
-      "font-sans text-neutral-100 text-5xl md:text-5l text-center py-12 tracking-widest",
-    mobileText: "font-serif text-neutral-100 mx-8",
+      "font-sans text-black text-5xl md:text-5l text-center py-12 tracking-widest",
+    mobileText: "font-serif text-black mx-8",
 
     desktopContainer: "sm:block md:block hidden",
-    desktopTitle:
-      "font-sans text-neutral-100 text-5xl text-center py-12 pt-40 tracking-widest",
-    desktopText: "font-serif text-neutral-100 mx-60 text-lg leading-loose",
-    button:
-      "bg-zinc-200 px-6 py-2 rounded-lg border-4 border-sky-800 mt-4 text-zinc-900",
+    desktopTitle: "font-sans text-black text-2xl text-left pb-8 pt-40 ml-40",
+    desktopText: "font-serif text-black mx-40 text-base leading-loose",
+    button: "bg-accent px-6 py-2 rounded-lg mt-12 text-white",
   };
 
   return (
-    <div id="about" className={styles.background}>
+    <div id="about" className={styles.background} aria-label="about page">
       {/* MOBILE & TABLET */}
       <div id="mobile-about" className={styles.mobileContainer}>
         <h1 className={styles.mobileTitle}>Bio</h1>
@@ -25,7 +23,6 @@ const About = () => {
         </p>
 
         <p>
-          <br />
           He began his journey into the world of classical guitar at an early
           age, studying with Hannah Feehan in York. In September 2024, Isaac
           will begin studying under the expertise of Michael Lewin and Stephen
@@ -47,13 +44,12 @@ const About = () => {
         </div>
 
         <div className={styles.desktopText}>
-          <p className=" pt-12">
+          <p>
             Isaac is a talented and award winning classical guitarist, whose
             virtuosity has captivated audiences across the UK.
           </p>
 
-          <p>
-            <br />
+          <p className="pt-4">
             He began his journey into the world of classical guitar at an early
             age, studying with Hannah Feehan in York. In September 2024, Isaac
             will begin studying under the expertise of Michael Lewin and Stephen
@@ -61,8 +57,7 @@ const About = () => {
             from RAM, demonstrating his passion and commitment to mastery of his
             instrument.
           </p>
-          <p>
-            <br />
+          <p className="pt-4">
             Isaac will bring elegance and provie a refined ambience to your
             event, in a professional and experienced manner.
           </p>

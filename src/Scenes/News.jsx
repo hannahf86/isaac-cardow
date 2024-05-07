@@ -23,7 +23,7 @@ const News = () => {
   };
 
   return (
-    <div id="news" className={styles.background}>
+    <div id="news" className={styles.background} aria-label="news page">
       <h1 className={styles.mobileTitle}>NEWS</h1>
 
       {/* MOBILE & TABLET */}

@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className={styles.background}>
+    <div id="contact" className={styles.background} aria-label="contact page">
       {/* MOBILE & TABLET */}
       <h1 className={styles.mobileTitle}>CONTACT</h1>
 

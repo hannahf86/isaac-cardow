@@ -6,16 +6,12 @@ export default {
     extend: {
       screens: {
         xs: "425px",
+        mdMid: "880px",
       },
       colors: {
         black: "#020617",
         accent: "#50140d",
         lightAccent: "#76140d",
-      },
-      dropShadow: {
-        "text-sm": "1px 1px 0px rgba(0, 0, 0, 0.90)",
-        "text-md": "1px 2px 0px rgba(0, 0, 0, 0.90)",
-        "text-lg": "1px 4px 0px rgba(0, 0, 0, 0.90)",
       },
       container: {
         center: true,
@@ -30,6 +26,7 @@ export default {
       fontFamily: {
         sans: ["Volkhov", "sans-serif"],
         serif: ["Open Sans", "serif"],
+        cursive: ["Dancing Script", "cursive"],
       },
       fontSize: {
         sm: ["clamp(1.00rem, calc(0.92rem + 0.39vw), 1.20rem)", "1.4"],

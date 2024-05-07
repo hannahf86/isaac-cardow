@@ -9,9 +9,9 @@ import logo from "../assets/favicon.png";
 import { HiHome, HiCalendar, HiMail } from "react-icons/hi";
 import { BiSolidBookBookmark } from "react-icons/bi";
 
-const Nav = () => {
+const Layout = () => {
   const styles = {
-    container: "hidden sm:hidden md:block lg:block",
+    container: "hidden sm:hidden md:block lg:block fixed z-10",
     background:
       "fixed w-full flex flex-row justify-evenly items-center bg-white ",
     text: "text-black font-serif text-md tracking-widest py-12 px-2 hover:text-neutral-200 hover:bg-accent hover:scale-110 cursor-pointer",
@@ -82,4 +82,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Layout;
