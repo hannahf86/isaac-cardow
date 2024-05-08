@@ -1,16 +1,25 @@
+// EMAIL
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+// TOAST
+import toast, { Toaster } from "react-hot-toast";
+
 const Contact = () => {
   const styles = {
-    background: "h-full bg-zinc-900",
-    mobileTitle:
-      "text-neutral-100 text-5xl text-center pt-12 mb-8 lg:pt-52 tracking-widest",
+    background: "h-full bg-white py-12",
+    desktopContainer:
+      "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-8 sm:pt-32 md:pt-40 lg:pt-40 xl:pt-40",
+    title:
+      "font-sans text-black text-4xl md:text-5l text-center pb-8 tracking-widest",
     formContainer:
       "flex flex-col justify-center max-w-xs lg:max-w-2xl md:max-w-xl sm:max-w-lg mx-auto",
-    inputName: "p-2 rounded-md mb-4 border-4 border-sky-800",
-    inputMessage: "rounded-md h-60 p-2 mb-4 border-4 border-sky-800",
-    button: "bg-zinc-200 px-6 py-2 rounded-lg border-4 border-sky-800 mt-4",
+    inputName:
+      "p-3 rounded-md mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
+    inputMessage:
+      "rounded-md h-60 p-3 mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
+    button:
+      "flex justify-evenly items-center bg-zinc-200 px-6 py-2 rounded-lg border-4 border-accent mt-4",
     buttonText: "font-light tracking-widest",
   };
 
@@ -29,20 +38,22 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Success! The pigeon has flown the nest!");
+          toast.success("Thank you! Your message has been sent!");
         },
         (error) => {
           console.log(error.text);
+          toast.error("Oh no! Something went wrong");
         },
       );
   };
 
   return (
     <div id="contact" className={styles.background} aria-label="contact page">
-      {/* MOBILE & TABLET */}
-      <h1 className={styles.mobileTitle}>CONTACT</h1>
-
-      <div>
+      <div className={styles.desktopContainer}>
+        <h1 className={styles.title}>Contact</h1>
+        <p className="text-center text-md pb-8 font-serif">
+          Please get in touch to book Isaac for your event.
+        </p>
         <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
           <input
             type="text"
@@ -70,13 +81,12 @@ const Contact = () => {
             <button type="submit" value="Send" className={styles.button}>
               <h4 className={styles.buttonText}>Send</h4>
             </button>
+            <Toaster position="top-center" />
           </div>
         </form>
       </div>
 
       <div className="pb-12"></div>
-
-      {/* DESKTOP */}
     </div>
   );
 };

@@ -55,7 +55,7 @@ const Nav = () => {
             <BiSolidBookBookmark size={25} className={styles.icon} />
           </a>
 
-          <a href="/#news" aria-current="page" className="nav-link">
+          <a href="/#newsgrid" aria-current="page" className="nav-link">
             <HiNewspaper size={28} className={styles.icon} />
           </a>
 

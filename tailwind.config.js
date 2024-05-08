@@ -12,6 +12,8 @@ export default {
         black: "#020617",
         accent: "#50140d",
         lightAccent: "#76140d",
+        success: "#00AB41",
+        error: "#D1001F",
       },
       container: {
         center: true,
