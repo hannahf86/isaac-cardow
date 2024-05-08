@@ -19,10 +19,13 @@ const Contact = () => {
     inputMessage:
       "rounded-md h-60 p-3 mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
     button:
-      "flex justify-evenly items-center bg-zinc-200 px-6 py-2 rounded-lg border-4 border-accent mt-4",
-    buttonText: "font-light tracking-widest",
+      "flex justify-evenly items-center bg-accent px-6 py-2 rounded-lg hover:outline outline-offset-2 outline-2 outline-darkAccent active:outline-lightAccent hover:bg-darkAccent active:bg-lightAccent mt-4",
+    buttonText: "font-light tracking-widest text-white",
   };
 
+  // clear the form
+
+  // email JS
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,7 +33,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2ih7tmh",
+        "service_18by4yc",
         "template_w8vevsc",
         form.current,
         "YMI-A2ta35eLOMgjl",
@@ -54,12 +57,15 @@ const Contact = () => {
         <p className="text-center text-md pb-8 font-serif">
           Please get in touch to book Isaac for your event.
         </p>
+
+        {/* FORM */}
         <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
           <input
             type="text"
             name="from_name"
             placeholder="Full Name"
             className={styles.inputName}
+            required
             minLength={2}
           />
           <input
@@ -67,6 +73,7 @@ const Contact = () => {
             name="from_email"
             placeholder="Email"
             className={styles.inputName}
+            required
             maxLength={50}
           />
           <input
@@ -74,6 +81,7 @@ const Contact = () => {
             name="message"
             placeholder="Enter your message"
             className={styles.inputMessage}
+            required
             maxLength={500}
           />
 
