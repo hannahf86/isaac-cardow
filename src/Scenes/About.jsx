@@ -2,7 +2,7 @@ const About = () => {
   const styles = {
     background: "h-full bg-white",
     container:
-      "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-40 sm:pt-32 md:pt-40 lg:pt-40 xl:pt-40 ",
+      "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-40 xs:pt-12 sm:pt-32 md:pt-40 lg:pt-40 xl:pt-40 ",
     title: "font-sans text-black text-3xl text-left pb-8 ",
     text: "font-serif text-black text-base leading-loose text-justify",
     button: "bg-accent px-6 py-2 rounded-lg mt-12 text-white",

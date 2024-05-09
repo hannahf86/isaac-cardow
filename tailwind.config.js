@@ -15,6 +15,7 @@ export default {
         darkAccent: "#40100a",
         success: "#00AB41",
         error: "#D1001F",
+        nav: "#efe8e6",
       },
       container: {
         center: true,

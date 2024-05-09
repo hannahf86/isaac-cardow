@@ -1,6 +1,6 @@
 // ASSETS
 import logo from "../Assets/favicon.png";
-import { HiHome, HiMail, HiNewspaper } from "react-icons/hi";
+import { HiHome, HiMail, HiNewspaper, HiMusicNote } from "react-icons/hi";
 import { BiSolidBookBookmark } from "react-icons/bi";
 
 const Nav = () => {
@@ -11,9 +11,9 @@ const Nav = () => {
     text: "text-black font-serif text-sm tracking-widest py-6 px-2 hover:text-neutral-200 hover:bg-accent hover:scale-110 cursor-pointer",
     button:
       "bg-accent rounded-lg py-4 px-12 m-1 text-neutral-200 my-6 font-serif text-md tracking-widest cursor-pointer hover:scale-110 active:bg-lightAccent ",
-    mobileContainer: "block lg:hidden md:hidden sm:block",
+    mobileContainer: "block lg:hidden md:hidden sm:block z-50",
     mobileBackground:
-      "flex flex-row w-full justify-evenly items-center fixed bottom-0 z-50 bg-accent/10 z-10",
+      "flex flex-row w-full justify-evenly items-center fixed bottom-0 z-50 bg-nav z-10",
     icon: "text-black my-6 mx-6 ",
   };
 
@@ -49,6 +49,10 @@ const Nav = () => {
         <div className={styles.mobileBackground}>
           <a aria-current="page" href="/" className="nav-link">
             <HiHome size={28} className={styles.icon} />
+          </a>
+
+          <a href="/#music" aria-current="page" className="nav-link">
+            <HiMusicNote size={25} className={styles.icon} />
           </a>
 
           <a href="/#about" aria-current="page" className="nav-link">

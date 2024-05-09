@@ -12,7 +12,7 @@ const NewsGrid = () => {
     container:
       "mx-32 2xl:mx-40 xl:mx-32 lg:mx-24 md:mx-20 sm:mx-44 xs:mx-16 mb-20 ",
     title:
-      "font-sans text-black text-4xl sm:text-3xl text-center pt-20 pb-12 sm:pb-8 pt-12 lg:pt-40 md:pt-20 sm:pt-20 ",
+      "font-sans text-black text-4xl sm:text-3xl text-center pt-12 pb-12 sm:pb-8 pt-12 lg:pt-40 md:pt-20 sm:pt-20 ",
     grid: "grid grid-cols-1 gap-y-12 2xl:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 md:gap-x-20 gap-y-20 sm:gap-y-12",
     newsCard:
       "bg-accent/10 shadow-lg shadow-slate-300 rounded-md p-6 xl:p-8 lg:p-6 md:px-4 sm:p-6 flex-col justify-center",
