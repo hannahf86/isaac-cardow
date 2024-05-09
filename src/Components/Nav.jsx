@@ -26,20 +26,20 @@ const Nav = () => {
             <h2 className={styles.text}>HOME</h2>
           </a>
 
-          <a href="/#about">
-            <h2 className={styles.text}>ABOUT</h2>
+          <a href="/#music">
+            <h2 className={styles.text}>MUSIC</h2>
           </a>
 
           <a href="/" id="nav-link">
             <img src={logo} width={60} />
           </a>
 
-          <a href="/#newsgrid">
-            <h2 className={styles.text}>NEWS</h2>
+          <a href="/#about">
+            <h2 className={styles.text}>ABOUT</h2>
           </a>
 
-          <a href="/#contact">
-            <button className={styles.button}>BOOK</button>
+          <a href="/#newsgrid">
+            <h2 className={styles.text}>NEWS</h2>
           </a>
         </div>
       </div>
