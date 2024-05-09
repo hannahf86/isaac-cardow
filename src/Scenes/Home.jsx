@@ -35,7 +35,7 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="/">
       <div>
         <img src={xl} className={backgroundSize.xl} />
         <img src={lg} className={backgroundSize.lg} />
