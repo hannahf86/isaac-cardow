@@ -34,7 +34,7 @@ const Contact = () => {
   const styles = {
     background: "h-full bg-white py-12",
     desktopContainer:
-      "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-12 sm:pt-32 md:pt-40 lg:pt-40 xl:pt-40",
+      "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-8 sm:pt-12 md:pt-40 lg:pt-40 xl:pt-40",
     title:
       "font-sans text-black text-4xl md:text-5l text-center pb-8 tracking-widest",
     formContainer:

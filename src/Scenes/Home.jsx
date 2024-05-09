@@ -17,7 +17,7 @@ const Home = () => {
     mdMid:
       "w-screen h-screen hidden xs:hidden sm:hidden md:hidden mdMid:block lg:hidden xl:hidden",
     md: "w-screen h-screen hidden xs:hidden sm:hidden md:block mdMid:hidden lg:hidden xl:hidden",
-    sm: "w-screen h-screen hidden xs:hidden sm:block md:hidden mdMid:hidden lg:hidden xl:hidden",
+    sm: "w-screen hidden xs:hidden sm:block md:hidden mdMid:hidden lg:hidden xl:hidden px-6 mb-8 mt-2",
     xs: "w-screen m-auto hidden xs:block sm:hidden md:hidden mdMid:hidden lg:hidden xl:hidden px-6 mb-8 mt-2",
   };
 
@@ -25,18 +25,18 @@ const Home = () => {
     background:
       "relative md:top-12 sm:top-0 flex justify-center xs:justify-start h-screen",
     container:
-      "absolute xl:top-80 xl:right-52 lg:top-60 lg:right-32 md:top-60 md:right-20 sm:top-80 sm:right-8 xs:inset-0 xs:flex xs:justify-center xs:top-80 grid gap-4",
+      "absolute xl:top-80 xl:right-52 lg:top-60 lg:right-32 md:top-60 md:right-20 sm:top-80 sm:inset-0 sm:flex xs:inset-0 xs:flex xs:justify-center xs:top-80 grid gap-4",
     title:
-      "text-accent xs:text-5xl xs:pt-16 xs:pb-4 xl:text-5xl lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl text-3xl sm:text-left text-center row-start-1 z-10",
+      "text-accent xs:text-5xl xs:pt-16 xs:pb-4 sm:text-3xl sm:pt-20 sm:pb-4 xl:text-5xl lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl text-3xl sm:text-center text-center row-start-1 z-10",
     subtitle:
-      "text-accent xs:text-4xl xl:text-2xl lg:text-lg md:text-lg sm:text-lg text-lg sm:text-md sm:text-left text-center row-start-2 z-10",
+      "text-accent xs:text-4xl sm:text-3xl xl:text-2xl lg:text-lg md:text-lg sm:text-center text-center row-start-2 z-10",
     highlighter:
       "xs:hidden absolute sm:w-4 xs:w-2 h-full bg-accent/30 -left-4 ",
     tagline:
-      "hidden xs:text-center xs:pt-8 xs:text-2xl xs:block sm:block md:block lg:block xl:block 2xl:block text-white xs:text-black font-bold font-cursive xl:text-xl lg:text-lg md:text-lg sm:text-lg z-50 leading-10",
+      " xs:text-center xs:pt-8 xs:text-2xl xs:text-black sm:text-center sm:pt-6 sm:text-3xl text-white font-bold font-cursive xl:text-xl lg:text-lg md:text-lg sm:text-lg z-50 leading-10",
     callToAction:
       "bg-accent/80 text-white uppercase rounded-lg mx-32 py-2 px-4 font-serif absolute xs:flex xs:flex-col xs:justify-center xs:bottom-28 xs:items-center xs:inset-x-0",
-    logo: "m-auto py-2",
+    logo: "m-auto py-2 hidden xs:block sm:block md:hidden mdMid:hidden lg:hidden xl:hidden",
   };
 
   return (
