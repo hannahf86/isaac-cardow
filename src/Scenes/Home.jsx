@@ -1,10 +1,10 @@
 // ASSETS
-import xl from "../Assets/backgrounds/bg-xl.png";
-import lg from "../Assets/backgrounds/bg-lg.png";
-import mdMid from "../Assets/backgrounds/bg-md-mid.png";
-import md from "../Assets/backgrounds/bg-md.png";
-import sm from "../Assets/backgrounds/bg-sm.png";
-import mobile from "../Assets/backgrounds/bg-mobile.png";
+import xl from "../Assets/backgrounds/bgxl.png";
+import lg from "../Assets/backgrounds/bglg.png";
+import mdMid from "../Assets/backgrounds/bgmdmid.png";
+import md from "../Assets/backgrounds/bgmd.png";
+import sm from "../Assets/backgrounds/bgsm.png";
+import mobile from "../Assets/backgrounds/bgmobile.png";
 
 const Home = () => {
   const backgroundSize = {
