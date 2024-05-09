@@ -13,7 +13,7 @@ const Nav = () => {
       "bg-accent rounded-lg py-4 px-12 m-1 text-neutral-200 my-6 font-serif text-md tracking-widest cursor-pointer hover:scale-110 active:bg-lightAccent ",
     mobileContainer: "block lg:hidden md:hidden sm:block",
     mobileBackground:
-      "flex flex-row w-full justify-evenly items-center fixed bottom-0 z-50 bg-white z-10",
+      "flex flex-row w-full justify-evenly items-center fixed bottom-0 z-50 bg-accent/10 z-10",
     icon: "text-black my-6 mx-6 ",
   };
 
