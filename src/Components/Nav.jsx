@@ -1,5 +1,5 @@
 // ASSETS
-import logo from "../assets/favicon.png";
+import logo from "../Assets/favicon.png";
 import { HiHome, HiMail, HiNewspaper } from "react-icons/hi";
 import { BiSolidBookBookmark } from "react-icons/bi";
 
