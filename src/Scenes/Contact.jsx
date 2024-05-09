@@ -1,11 +1,42 @@
-// EMAIL
-import { useRef } from "react";
+// REACT
+import { useRef, useState } from "react";
+
+// EMAIL JS
 import emailjs from "@emailjs/browser";
 
 // TOAST
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
+  // email js
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_18by4yc", "template_w8vevsc", form.current, {
+        publicKey: "YMI-A2ta35eLOMgjl",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Thank you! Your message has been sent!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("Oh no! There has been a problem!");
+        },
+      );
+  };
+
+  // reset form
+  const [input, setInput] = useState("");
+
+  function clearForm() {
+    setInput("");
+  }
+
   const styles = {
     background: "h-full bg-white py-12",
     desktopContainer:
@@ -23,33 +54,6 @@ const Contact = () => {
     buttonText: "font-light tracking-widest text-white",
   };
 
-  // clear the form
-
-  // email JS
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_18by4yc",
-        "template_w8vevsc",
-        form.current,
-        "YMI-A2ta35eLOMgjl",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Thank you! Your message has been sent!");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("Oh no! Something went wrong");
-        },
-      );
-  };
-
   return (
     <div id="contact" className={styles.background} aria-label="contact page">
       <div className={styles.desktopContainer}>
@@ -59,7 +63,7 @@ const Contact = () => {
         </p>
 
         {/* FORM */}
-        <form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
+        <form className={styles.formContainer} ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="from_name"
@@ -74,7 +78,7 @@ const Contact = () => {
             placeholder="Email"
             className={styles.inputName}
             required
-            maxLength={50}
+            maxLength={100}
           />
           <input
             type="textarea"
