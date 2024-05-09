@@ -1,5 +1,5 @@
 // REACT
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 // EMAIL JS
 import emailjs from "@emailjs/browser";
@@ -22,6 +22,7 @@ const Contact = () => {
         () => {
           console.log("SUCCESS!");
           toast.success("Thank you! Your message has been sent!");
+          document.getElementById("contactForm").reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -29,13 +30,6 @@ const Contact = () => {
         },
       );
   };
-
-  // reset form
-  const [input, setInput] = useState("");
-
-  function clearForm() {
-    setInput("");
-  }
 
   const styles = {
     background: "h-full bg-white py-12",
@@ -46,9 +40,9 @@ const Contact = () => {
     formContainer:
       "flex flex-col justify-center max-w-xs lg:max-w-2xl md:max-w-xl sm:max-w-lg mx-auto",
     inputName:
-      "p-3 rounded-md mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
+      "font-serif p-3 rounded-md mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
     inputMessage:
-      "rounded-md h-60 p-3 mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
+      "font-serif rounded-md h-60 p-3 mb-4 border-4 border-accent placeholder:font-serif placeholder:italic placeholder:text-slate-400",
     button:
       "flex justify-evenly items-center bg-accent px-6 py-2 rounded-lg hover:outline outline-offset-2 outline-2 outline-darkAccent active:outline-lightAccent hover:bg-darkAccent active:bg-lightAccent mt-4",
     buttonText: "font-light tracking-widest text-white",
@@ -63,7 +57,11 @@ const Contact = () => {
         </p>
 
         {/* FORM */}
-        <form className={styles.formContainer} ref={form} onSubmit={sendEmail}>
+        <form
+          className={styles.formContainer}
+          ref={form}
+          onSubmit={sendEmail}
+          id="contactForm">
           <input
             type="text"
             name="from_name"
