@@ -1,10 +1,10 @@
 // IMAGES
-import nyge from "../Assets/imgs/nyge.png";
-import rbc from "../Assets/imgs/rbc.png";
-import ram from "../Assets/imgs/ram.png";
-import trophies from "../Assets/imgs/trophies.png";
-import recital from "../Assets/imgs/recital.png";
-import rcs from "../Assets/imgs/rsc.png";
+import nyge from "../Assets/Imgs/nyge.png";
+import rbc from "../Assets/Imgs/rbc.png";
+import ram from "../Assets/Imgs/ram.png";
+import trophies from "../Assets/Imgs/trophies.png";
+import recital from "../Assets/Imgs/recital.png";
+import rcs from "../Assets/Imgs/rsc.png";
 
 const NewsGrid = () => {
   const styles = {
