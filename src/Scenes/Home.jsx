@@ -1,7 +1,7 @@
 // ASSETS
 import xl from "../Assets/Backgrounds/bgxl.png";
 import lg from "../Assets/Backgrounds/bglg.png";
-import mdMid from "../Assets/Backgrounds/bgmdmid.png";
+import mdMid from "../Assets/Backgrounds/bgmidmd.png";
 import md from "../Assets/Backgrounds/bgmd.png";
 import sm from "../Assets/Backgrounds/bgsm.png";
 import xs from "../Assets/Backgrounds/bgxs.png";

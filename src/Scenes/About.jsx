@@ -1,6 +1,6 @@
 const About = () => {
   const styles = {
-    background: "h-full bg-white",
+    background: "h-full bg-white static ",
     container:
       "px-16 sm:px-16 md:mx-12 lg:mx-12 xl:mx-40 pt-40 xs:pt-12 sm:pt-16 md:pt-40 lg:pt-40 xl:pt-40 ",
     title: "font-sans text-black text-3xl text-left pb-8 ",
