@@ -23,11 +23,11 @@ const Nav = () => {
       <div className={styles.container}>
         <div id="nav" className={styles.background}>
           <a href="/" id="nav-link">
-            <h2 className={styles.text}>HOME</h2>
+            <h2 className={styles.text}>MUSIC</h2>
           </a>
 
           <a href="/#music">
-            <h2 className={styles.text}>MUSIC</h2>
+            <h2 className={styles.text}>ABOUT</h2>
           </a>
 
           <a href="/" id="nav-link">
@@ -35,11 +35,11 @@ const Nav = () => {
           </a>
 
           <a href="/#about">
-            <h2 className={styles.text}>ABOUT</h2>
+            <h2 className={styles.text}>NEWS</h2>
           </a>
 
           <a href="/#newsgrid">
-            <h2 className={styles.text}>NEWS</h2>
+            <h2 className={styles.text}>CONTACT</h2>
           </a>
         </div>
       </div>
