@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.background} aria-label="contact page">
-      <div className={styles.desktopContainer}>
+      <main className={styles.desktopContainer}>
         <h1 className={styles.title}>Contact</h1>
         <p className="text-center text-md pb-8 font-serif">
           Please get in touch to book Isaac for your event.
@@ -61,7 +61,8 @@ const Contact = () => {
           className={styles.formContainer}
           ref={form}
           onSubmit={sendEmail}
-          id="contactForm">
+          id="contactForm"
+          aria-label="contact form">
           <input
             type="text"
             name="from_name"
@@ -94,7 +95,7 @@ const Contact = () => {
             <Toaster position="top-center" />
           </div>
         </form>
-      </div>
+      </main>
 
       <div className="pb-12"></div>
     </div>

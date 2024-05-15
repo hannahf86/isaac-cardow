@@ -21,32 +21,37 @@ const Nav = () => {
     <>
       {/* DESKTOP */}
       <div className={styles.container}>
-        <div id="nav" className={styles.background}>
-          <a href="/" id="nav-link">
+        <nav
+          id="nav"
+          className={styles.background}
+          aria-label="navigation menu">
+          <a href="/#music" aria-label="link to music information">
             <h2 className={styles.text}>MUSIC</h2>
           </a>
 
-          <a href="/#music">
+          <a href="/#about" aria-label="link to about">
             <h2 className={styles.text}>ABOUT</h2>
           </a>
 
-          <a href="/" id="nav-link">
+          <a href="/" id="nav-link" aria-label="link to home page">
             <img src={logo} width={60} />
           </a>
 
-          <a href="/#about">
+          <a href="/#newsgrid" aria-label="link to news page">
             <h2 className={styles.text}>NEWS</h2>
           </a>
 
-          <a href="/#newsgrid">
+          <a href="/#contact" aria-label="link to contact page">
             <h2 className={styles.text}>CONTACT</h2>
           </a>
-        </div>
+        </nav>
       </div>
 
       {/* MOBILE & TABLET */}
       <div className={styles.mobileContainer}>
-        <div className={styles.mobileBackground}>
+        <nav
+          className={styles.mobileBackground}
+          aria-label="mobile navigation menu">
           <a aria-current="page" href="/" className="nav-link">
             <HiHome size={28} className={styles.icon} />
           </a>
@@ -66,7 +71,7 @@ const Nav = () => {
           <a href="/#contact" aria-current="page" className="nav-link">
             <HiMail size={28} className={styles.icon} />
           </a>
-        </div>
+        </nav>
       </div>
     </>
   );

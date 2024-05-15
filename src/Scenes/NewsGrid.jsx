@@ -21,9 +21,9 @@ const NewsGrid = () => {
 
   return (
     <div id="newsgrid" className={styles.background}>
-      <div className={styles.container}>
+      <main className={styles.container}>
         <h1 className={styles.title}>News</h1>
-        <div id="grid" className={styles.grid}>
+        <section id="grid" className={styles.grid}>
           {/* ITEM 01 */}
           <div className={styles.newsCard}>
             <img src={recital} width={300} className="m-auto" loading="lazy" />
@@ -59,8 +59,8 @@ const NewsGrid = () => {
             <img src={rcs} width={300} className="m-auto" loading="lazy" />
             <h2 className={styles.newsTitle}>RCS Big Guitar Weekend</h2>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };

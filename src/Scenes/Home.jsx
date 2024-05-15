@@ -14,8 +14,8 @@ const Home = () => {
     mdMid:
       "w-screen hidden xs:hidden sm:hidden md:hidden mdMid:block lg:hidden xl:hidden",
     md: "w-screen hidden xs:hidden sm:hidden md:block mdMid:hidden lg:hidden xl:hidden",
-    sm: "w-screen hidden xs:hidden sm:block md:hidden mdMid:hidden lg:hidden xl:hidden px-6 pt-24",
-    xs: "w-screen block xs:block sm:hidden md:hidden mdMid:hidden lg:hidden xl:hidden px-6 pt-24",
+    sm: "w-screen hidden xs:hidden sm:block md:hidden mdMid:hidden lg:hidden xl:hidden px-6 pt-12",
+    xs: "w-screen block xs:block sm:hidden md:hidden mdMid:hidden lg:hidden xl:hidden px-6 pt-12",
   };
 
   const styles = {
@@ -45,21 +45,21 @@ const Home = () => {
         <img src={xs} className={backgroundSize.xs} />
       </div>
 
-      <div className={styles.container}>
+      <section className={styles.container}>
         <h1 className={styles.title}>Isaac Cardow</h1>
         <h1 className={styles.subtitle}>Classical Guitarist</h1>
 
         <h2 className={styles.tagline}>
           Perfect classical guitar music for your event or wedding
         </h2>
-      </div>
+      </section>
 
       {/* CALL TO ACTION */}
-      <div className={styles.actionContainer}>
+      <section className={styles.actionContainer}>
         <a href="/#music">
           <button className={styles.buttons}>Music List</button>
         </a>
-      </div>
+      </section>
     </div>
   );
 };

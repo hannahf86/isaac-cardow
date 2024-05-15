@@ -10,12 +10,12 @@ const About = () => {
 
   return (
     <div id="about" className={styles.background} aria-label="about page">
-      <div className={styles.container}>
+      <main className={styles.container}>
         <div className={styles.title}>
           <h1>About</h1>
         </div>
 
-        <div className={styles.text}>
+        <section className={styles.text}>
           <p>
             Isaac is a talented and award winning classical guitarist, whose
             virtuosity has captivated audiences across the UK.
@@ -45,11 +45,12 @@ const About = () => {
             elegance and provie a refined ambience to your event, in a
             professional and experienced manner.
           </p>
+          {/* CALL TO ACTION */}
           <div className="flex justify-center mt-8">
             <button className={styles.button}>Book now</button>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
 
       <div className="pb-20"></div>
     </div>
