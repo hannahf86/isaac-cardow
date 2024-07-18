@@ -47,7 +47,9 @@ const About = () => {
           </p>
           {/* CALL TO ACTION */}
           <div className="flex justify-center mt-8">
-            <button className={styles.button}>Book now</button>
+            <a href="/#contact">
+              <button className={styles.button}>Book now</button>
+            </a>
           </div>
         </section>
       </main>
