@@ -79,7 +79,7 @@ const Contact = () => {
             required
             maxLength={100}
           />
-          <input
+          <textarea
             type="textarea"
             name="message"
             placeholder="Enter your message"
